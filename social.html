@@ -18,17 +18,23 @@
 			background: #fff;
 		}
 
+		.container {
+			max-width: 1100px;
+			margin: 0 auto;
+			padding: 40px;
+			position: relative;
+		}
+
 		.profile-image {
 			position: fixed;
 			top: 20px;
 			right: 20px;
-			width: 120px;
-			height: 120px;
+			width: 150px;
+			height: 150px;
 			border-radius: 50%;
 			overflow: hidden;
 			border: 4px solid #fff;
 			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-			cursor: pointer;
 			z-index: 10;
 		}
 
@@ -38,26 +44,41 @@
 			object-fit: cover;
 		}
 
-		.profile-image:hover {
-			opacity: 0.8;
-			transition: opacity 0.3s ease;
-		}
-
-		.container {
-			max-width: 900px;
-			margin: 0 auto;
-			padding: 40px;
-			padding-top: 60px;
-		}
-
 		h1 {
-			font-size: 2.5rem;
+			font-size: 3.5rem;
 			font-weight: 300;
+			margin-bottom: 10px;
+			letter-spacing: -1px;
+		}
+
+		.divider {
+			width: 100%;
+			height: 2px;
+			background: #000;
 			margin-bottom: 30px;
-			letter-spacing: -0.5px;
+		}
+
+		nav {
+			display: flex;
+			gap: 30px;
+			flex-wrap: wrap;
+			margin-bottom: 40px;
+		}
+
+		nav a {
+			text-decoration: none;
+			color: #000;
+			font-size: 1.1rem;
+			transition: opacity 0.3s ease;
+			padding-bottom: 2px;
+		}
+
+		nav a:hover {
+			opacity: 0.6;
 		}
 
 		.content {
+			max-width: 900px;
 			font-size: 1rem;
 			line-height: 1.8;
 		}
@@ -66,39 +87,49 @@
 			margin-bottom: 16px;
 		}
 
-		a {
-			color: #0066cc;
-			text-decoration: none;
-			transition: opacity 0.3s ease;
-		}
-
-		a:hover {
-			opacity: 0.7;
-			text-decoration: underline;
-		}
-
 		@media (max-width: 768px) {
 			.container {
 				padding: 30px 20px;
-				padding-top: 150px;
+				padding-right: 180px;
 			}
 
 			h1 {
-				font-size: 1.8rem;
+				font-size: 2.5rem;
+			}
+
+			nav {
+				gap: 20px;
+			}
+
+			nav a {
+				font-size: 1rem;
+			}
+
+			.profile-image {
+				width: 120px;
+				height: 120px;
 			}
 		}
 	</style>
 </head>
 <body>
-	<a href="index.html" class="profile-image">
-		<img src="ele/Tricia.png" alt="Tricia Villena - Back to home">
-	</a>
+	<div class="profile-image">
+		<img src="ele/Tricia.png" alt="Tricia Villena">
+	</div>
 
 	<div class="container">
 		<h1>Social Responsibility</h1>
+		<div class="divider"></div>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="leadership.html">Leadership</a>
+			<a href="academics.html">Academics</a>
+			<a href="extra.html">Extra-Curriculars</a>
+		</nav>
+
 		<div class="content">
-			<p>This is the Social Responsibility page. Showcase your community involvement and social initiatives here.</p>
-			<p><a href="index.html">← Back to home</a></p>
+			<!-- Add your social responsibility content here -->
 		</div>
 	</div>
 </body>
