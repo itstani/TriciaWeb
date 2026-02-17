@@ -1,0 +1,19 @@
+{
+  "name": "tricia-portfolio",
+  "version": "1.0.0",
+  "description": "Student portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'No build needed'"
+  },
+  "keywords": [],
+  "author": "itstani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
