@@ -1,23 +1,105 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Social responsibility — Student Portfolio</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;padding:0}
-    .top-right-photo{position:fixed;top:20px;right:20px;width:80px;height:80px;border-radius:50%;overflow:hidden;border:6px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
-    .top-right-photo img{width:100%;height:100%;object-fit:cover}
-    .container{padding:48px;max-width:900px;margin:80px auto}
-    a{color:#0b5fff}
-  </style>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Social Responsibility — Tricia Villena</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif;
+			line-height: 1.6;
+			color: #111;
+			background: #fff;
+		}
+
+		.profile-image {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			overflow: hidden;
+			border: 4px solid #fff;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			z-index: 10;
+		}
+
+		.profile-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.profile-image:hover {
+			opacity: 0.8;
+			transition: opacity 0.3s ease;
+		}
+
+		.container {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 40px;
+			padding-top: 60px;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			font-weight: 300;
+			margin-bottom: 30px;
+			letter-spacing: -0.5px;
+		}
+
+		.content {
+			font-size: 1rem;
+			line-height: 1.8;
+		}
+
+		.content p {
+			margin-bottom: 16px;
+		}
+
+		a {
+			color: #0066cc;
+			text-decoration: none;
+			transition: opacity 0.3s ease;
+		}
+
+		a:hover {
+			opacity: 0.7;
+			text-decoration: underline;
+		}
+
+		@media (max-width: 768px) {
+			.container {
+				padding: 30px 20px;
+				padding-top: 150px;
+			}
+
+			h1 {
+				font-size: 1.8rem;
+			}
+		}
+	</style>
 </head>
 <body>
-  <div class="top-right-photo"><img src="ele/Tricia.png" alt="Trica photo"></div>
-  <div class="container">
-    <h1>Social responsibility</h1>
-    <p>This is the Social responsibility page. Replace with full content.</p>
-    <p><a href="index.html">Back to home</a></p>
-  </div>
+	<a href="index.html" class="profile-image">
+		<img src="ele/Tricia.png" alt="Tricia Villena - Back to home">
+	</a>
+
+	<div class="container">
+		<h1>Social Responsibility</h1>
+		<div class="content">
+			<p>This is the Social Responsibility page. Showcase your community involvement and social initiatives here.</p>
+			<p><a href="index.html">← Back to home</a></p>
+		</div>
+	</div>
 </body>
 </html>
